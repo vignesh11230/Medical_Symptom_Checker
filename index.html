@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Symptom Checker</h1>
+        
+        <div class="form-container">
+            <h3>Select Symptoms:</h3>
+            <form id="symptom-form">
+                <div class="symptom-list">
+                    <label>
+                        <input type="checkbox" value="Cough"> Cough
+                    </label>
+                    <label>
+                        <input type="checkbox" value="Fever"> Fever
+                    </label>
+                    <label>
+                        <input type="checkbox" value="Headache"> Headache
+                    </label>
+                    <label>
+                        <input type="checkbox" value="Fatigue"> Fatigue
+                    </label>
+                    <label>
+                        <input type="checkbox" value="Nausea"> Nausea
+                    </label>
+                    <label>
+                        <input type="checkbox" value="Sore throat"> Sore throat
+                    </label>
+                    <label>
+                        <input type="checkbox" value="Runny nose"> Runny nose
+                    </label>
+                </div>
+                <button type="button" onclick="checkSymptoms()">Check Symptoms</button>
+            </form>
+        </div>
+
+        <div id="results">
+           
+            <ul id="selected-symptoms-list"></ul>
+<center>
+<div id="results">
+    
+    <ul id="selected-symptoms-list"></ul>
+
+   
+    <ul id="suggested-disease-list"></ul>
+</div>
+</center>
+            
+            <ul id="suggested-diseases-list"></ul>
+        </div>
+    </div>
+   
+
+
+    <script src="script.js"></script>
+</body>
+</html>
